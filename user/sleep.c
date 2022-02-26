@@ -5,10 +5,11 @@
 
 int main(int argc, char *argv[]) {
     if (argc < 2) {
-        fprintf(2, "Usage: sleep secs\n");
+        fprintf(2, "Usage: sleep [secs]\n");
         exit(1);
     }
     int sec = atoi(argv[1]);
     sleep(sec);
+    
     exit(0);
 }
